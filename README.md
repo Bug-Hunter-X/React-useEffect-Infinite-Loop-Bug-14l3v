@@ -1,0 +1,3 @@
+# React useEffect Infinite Loop Bug
+
+This repository demonstrates a common error in React's `useEffect` hook: an infinite loop caused by omitting necessary dependencies in the dependency array.  The `bug.js` file contains the buggy code, while `bugSolution.js` provides the corrected version.  The problem occurs because the `useEffect` hook runs after every render unless the dependency array is properly managed.  In this case, not including `count` in the dependency array causes the effect to continuously trigger itself.
